@@ -260,7 +260,34 @@
     #section_a div article {
         width: 100%;
     }
+
+    section#section_b {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    section#section_b p{
+        font-size: clamp(0.8rem, 1vw ,2rem)
+    }
+
+    #section_b .card_container{
+        flex-flow: column nowrap;
+        max-height: fit-content;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    #section_b .card_container .card{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
     
+    #section_b .card_container article{
+        padding-left: 0.5rem;
+    }
+
     #section_c div {
         flex-flow: column nowrap;
     }
