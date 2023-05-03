@@ -42,7 +42,7 @@ body{
     height: 4.75rem;
     justify-content: space-between;
     left: 0;
-    min-width: 20rem;
+    min-width: 10rem;
     right: 0;
     z-index: 100;
 }
@@ -273,7 +273,7 @@ section#section_b{
 
 #section_b .card_container .card {
     margin: auto 1%;
-    width: 25%;
+    max-width: 25%;
     border-radius: 0.3rem;
     border: 3px solid #dfdfdf;
     display: flex;
@@ -296,8 +296,7 @@ section#section_b{
     font-size: 0.7rem;
     padding: 1rem;
     text-align: left;
-    overflow-x:hidden;
-    max-height: 15rem;
+    overflow: hidden;
 }
 
 .card article h3 {

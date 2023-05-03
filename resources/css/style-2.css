@@ -134,12 +134,76 @@
         flex-grow: 100;
     }
 
-    .JS, .React, .Negocios, .Startups{
-        font-size: 2.5vw;
-    }
+    @media (min-width: 376px) and (max-width: 768px){
+
+        section#section_b {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
     
-    #section_b .card_container .card article h3{
-        font-size: 0.8rem;
+        section#section_b p{
+            font-size: clamp(0.8rem, 1vw ,2rem)
+        }
+    
+        #section_b .card_container{
+            flex-flow: column nowrap;
+            max-height: fit-content;
+            overflow: hidden;
+            align-items: flex-start;
+            
+        }
+    
+        #section_b .card_container .card{
+            flex-flow: row nowrap;
+            align-items: stretch;
+            margin: 0;
+            max-width: fit-content;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    
+        #section_b .card_container .card figure{
+            display: flex;
+            min-width: 30%;
+            flex-shrink: 10;
+        }
+
+        #section_b .card_container .card figure img {
+            place-self: center;
+        }
+        
+    
+        #section_b .card_container article{
+            background-color: white;
+            border-left: 3px solid #dfdfdf;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.5rem;
+            max-height: fit-content;
+            flex-grow: 100;
+        }
+
+        .main_container #section_b .card_container article{
+            min-height: clamp( 16rem , 80% , 25rem );
+        }
+    
+        #section_b .card_container .card article h3 {
+            padding-top: 0.5rem;
+            line-height: 2.3rem;
+            font-size: 2rem;
+            margin: 0;
+        }
+    
+        .JS, .React, .Negocios, .Startups{
+            font-size: 2.5vw;
+            order: 2;
+        }
+    
+        #section_b .card_container .card article p {
+            margin-top: 0.5rem;
+            order: 3;
+        }
     }
 
     #section_c{
@@ -280,6 +344,7 @@
 
     #section_b .card_container .card{
         margin: 0;
+        max-width: fit-content;
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -309,6 +374,16 @@
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+    }
+
+
+    @media(max-width: 220px){
+        .header-right{
+            display: none;
+        }
+        figure.header-left > img{
+            display: none;
+        }
     }
 
 }
