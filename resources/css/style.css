@@ -293,15 +293,17 @@ section#section_b{
 }
 
 .card article {
-    font-size: 0.7rem;
+    font-size: clamp(0.8rem, 1.1vw, 1.0rem);
     padding: 1rem;
     text-align: left;
     overflow: hidden;
 }
 
 .card article h3 {
-    font-size: 1rem;
+    font-size: clamp(1.3rem, 1.8vw, 3.3rem);
+    font-weight: 500;
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .JS, .React, .Negocios, .Startups {
